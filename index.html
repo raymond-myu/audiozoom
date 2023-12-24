@@ -78,6 +78,15 @@
          .video-container video {
             width: 33%;
          }
+         .text-overlay {
+            position: abssolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            color: black;
+            font-size: 16px;
+            text-align: center;
+         }
       </style>
    </head>
 
@@ -113,27 +122,24 @@
     <b style="text-align: center;">Left: </b> Wall mounted microphone array. Target region is about 60&deg; to 120&deg; in the horizontal plane. When the speaker moves outside the designated area, his voice is not effectively captured.   
         <b style="text-align: center;">Middle: </b>  Wall mounted microphone array. A speaker uses a remote controller to modify the target region size, transitioning from a wide coverage to a narrow focus. Throughout this adjustment, the captured sound diminishes progressively from both speakers to a single speaker and eventually to complete silence.
         <b style="text-align: center;">Right: </b>  Ceiling mounted microphone array. Initially, the target region encompasses the entire space, allowing the simultaneous capture of all three speakers' voices. Subsequently, the target region size is narrowed to the table area, resulting in the suppression of the standing speaker's voice. (In collaboration with Tencent Meeting team)  <br>
-   <thead>
-    <tr>
-      <th style="text-align: center;">Left</th>
-      <th style="text-align: center;">Middle</th>
-      <th style="text-align: center;">Right</th>
-    </tr>
-   </thead>
+
         
    <div class=“video-container">
  
       <video width="480" height="330" controls>
           <source src="wall1.mp4" type="video/mp4">         
       </video>
+      <div class="text-overlay"> Left </div>
    
       <video width="480" height="330" controls>
           <source src="wall2.mp4" type="video/mp4"> 
       </video>
+      <div class="text-overlay"> Middle </div>
       
       <video width="480" height="330" controls>
           <source src="celling1.mp4" type="video/mp4">   
       </video>
+      <div class="text-overlay"> Right </div>
 
    </div>
 
